@@ -11,7 +11,7 @@
  <body>
   <div class="container">
   <div class="jumbotron" style="background-image: url(https://pixabay.com/static/uploads/photo/2014/03/23/00/56/the-background-293037_960_720.png); background-size: 100%;">
-  <center><h1>Towrzenie albumu</h1></center>
+  <center><h1>Tworzenie albumu</h1></center>
   </div>
   <div class="dropzone" id="dropzoneForm">
   </div>
@@ -29,7 +29,7 @@
        	 return	input;
        }
    $(".dropzone").dropzone({
-     maxFiles: 2000,
+     maxFiles: 500,
      url: "{{ url_for('upload') }}",
      success: function(file, response){
        console.log(response);
